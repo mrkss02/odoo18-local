@@ -1,0 +1,32 @@
+[options]
+# Addons paths
+addons_path = ./odoo/addons,./odoo-enterprise,./custom-addons
+
+# Database configuration
+admin_passwd = admin123
+db_host = localhost
+db_port = 5418
+db_user = odoo
+db_password = odoo
+db_name = False
+list_db = True
+
+# Performance limits
+cpu_time_limit = 15000
+limit_time_real = 10000
+limit_memory_hard = 0
+
+# Logging
+log_db = False
+log_db_level = warning
+logfile = ./logs/odoo.log
+log_level = debug
+
+# Paths
+data_dir = ./data
+
+# Server
+xmlrpc_port = 8018
+
+# Development settings
+dev_mode = reload,qweb,werkzeug,xml

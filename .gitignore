@@ -1,0 +1,46 @@
+# Odoo source code
+odoo/
+odoo-enterprise/
+
+# Custom addons
+custom-addons/*
+!custom-addons/.gitkeep
+
+# Python compiled files
+__pycache__/
+*.py[co]
+*.egg-info
+
+# Virtual environment
+venv/
+
+# Odoo config
+conf/odoo.conf
+
+# Odoo runtime data
+data/*
+!data/.gitkeep
+
+# Environment variables
+.env
+.env.local
+
+# IDE
+.idea/
+*.swp
+*~
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Docker
+docker-compose.override.yml
+
+# Logs
+logs/*
+!logs/.gitkeep
+
+# Database dumps
+*.sql
+*.dump

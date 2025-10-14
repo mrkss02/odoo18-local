@@ -1,0 +1,19 @@
+services:
+  db:
+    container_name: odoo18-db
+    image: postgres:18
+    restart: unless-stopped
+    env_file:
+      - .env
+    ports:
+      - "5418:5432"
+    volumes:
+      - db_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U odoo"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+volumes:
+  db_data: {}

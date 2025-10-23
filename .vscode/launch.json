@@ -11,7 +11,8 @@
             "program": "${workspaceFolder}/odoo/odoo-bin",
 
             "args": [
-                "-c", "${workspaceFolder}/conf/odoo.conf"
+                "-c", "${workspaceFolder}/conf/odoo.conf",
+                "--dev=all",
             ],
 
             "console": "integratedTerminal",
